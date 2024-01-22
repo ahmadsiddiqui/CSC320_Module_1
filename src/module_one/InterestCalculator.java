@@ -1,5 +1,6 @@
 package module_one;
 import java.util.Scanner;
+
 public class InterestCalculator {
 	public static void main(String args[]) {
 		
