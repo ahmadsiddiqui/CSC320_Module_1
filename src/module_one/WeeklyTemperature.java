@@ -5,10 +5,13 @@ import java.util.ArrayList;
 
 public class WeeklyTemperature {
 	public static void main(String[] args) {
+		//prompt the user for input
 		Scanner s = new Scanner(System.in);
-		System.out.print("Enter the day of the week or type 'week' for an average: ");
+		System.out.print("Enter the day of the week e.g. \"Monday\" or type \"week\" for an average: ");
 		String input = s.next();
-		ArrayList<Integer> temps = new ArrayList<Integer>();
+		ArrayList<Integer> temps = new ArrayList<Integer>();\
+		
+		//adding the temps manually to the arraylist
 		temps.add(75);
 		temps.add(78);
 		temps.add(84);
@@ -17,6 +20,7 @@ public class WeeklyTemperature {
 		temps.add(69);
 		temps.add(79);
 		
+		//calculating the average temperature
 		int avg = 0;
 		for( Integer i: temps) {
 			avg +=i;
